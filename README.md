@@ -37,7 +37,7 @@ const getLxLyClient = async (network = 'testnet') => {
     network: network,
     providers: {
       // Destination network: zkEVM / Agglayer (network ID: 1)
-1: {
+       1: {
         provider: new HDWalletProvider([config.user1.privateKey], config.configuration[1].rpc),
         configuration: {
           bridgeAddress: config.configuration[1].bridgeAddress,
