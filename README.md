@@ -36,7 +36,7 @@ const getLxLyClient = async (network = 'testnet') => {
     log: true,
     network: network,
     providers: {
-      // Destination network: zkEVM / Agglayer (network ID: 1)
+// zkEVM cardona 
        1: {
         provider: new HDWalletProvider([config.user1.privateKey], config.configuration[1].rpc),
         configuration: {
@@ -48,6 +48,7 @@ const getLxLyClient = async (network = 'testnet') => {
           from: config.user1.address
         }
       },
+// silcion sepolia
       16: {
         provider: new HDWalletProvider([config.user1.privateKey], config.configuration[16].rpc),
         configuration: {
