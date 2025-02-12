@@ -81,12 +81,12 @@ const execute = async () => {
     // Initialize the lxly client
     const client = await getLxLyClient();
 
-    // Define source network ID (Sepolia Testnet)
+    // Define source network ID (zkEVM  Testnet)
     const sourceNetworkId = 1;
     // Get the API for the Ether token on the source network
     const token = client.erc20(tokens[sourceNetworkId].ether, sourceNetworkId);
 
-    // Define destination network ID (zkEVM / Agglayer)
+    // Define destination network ID (Silicon sepolia)
     const destinationNetworkId = 16;
     // Bridge a specific amount of Ether (in wei)
     const result = await token.bridgeAsset("10000000000000000", config.user1.address, destinationNetworkId);
@@ -166,9 +166,9 @@ const execute = async () => {
     // Initialize the lxly client
     const client = await getLxLyClient();
     
-    // Define source network ID (Sepolia Testnet)
+    // Define source network ID (zkEVM Testnet)
     const sourceNetworkId = 1;
-    // Define destination network ID (zkEVM / Agglayer)
+    // Define destination network ID (Silicon sepolia)
     const destinationNetworkId = 16;
     // Get the API for the Ether token on the destination network
     const token = client.erc20(tokens[destinationNetworkId].ether, destinationNetworkId);
