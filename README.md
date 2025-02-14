@@ -3,8 +3,8 @@
 This guide will help you get familiar with LxLy.js, configure your code to interact with Agglayer chains, and bridge assets from the Polygon zkEVM testnet to the Silicon Sepolia testnet using the Unified Bridge and lxly.js.
 In this guide you will:
 * Configure your environment
-* Bridge your asset
-* Check its status using the Bridge API
+* Bridge your asset using bridge API 
+* Check its status using the Transaction API
 * Use the claim API to claim the transaction on the destination chain.
 ---
 
